@@ -1,14 +1,21 @@
 README.txt
 ==========
 
-Exomoon Candidates Catalogue
---------------------------
+Exomoon & Exoplanet Candidates Catalogues
+------------------------------------------
 
-This document contains a catalogue of **exomoon candidates** compiled from multiple scientific articles. It gathers key observational and inferred parameters for each candidate, including the properties of the moon, host planet, and host star, as well as uncertainties and references to the original sources.
+This repository contains:
 
-The catalogue is intended to support statistical analysis of exomoon properties, detection limits, and stability criteria, and may be useful for follow-up studies, mission planning, or comparative studies with the Solar System.
+1. **Exomoon Candidates Catalogue** – compiled from multiple scientific articles, including key observational and inferred parameters for each candidate moon, host planet, and host star.
+2. **PLATO and HWO Candidate Exoplanets** – derived from the exoplanet.eu database (6038 planets) after applying mission-specific observational selection criteria:
+   - **PLATO**: transit detection optimization (592 candidates).
+   - **HWO**: direct imaging & habitable zone selection (12 candidates).
 
-Each row corresponds to a reported exomoon candidate or system, and each column is described below:
+Both filtered exoplanet candidate lists are provided as CSV files:
+- [`plato_candidates.csv`](./plato_candidates.csv)
+- [`hwo_candidates.csv`](./hwo_candidates.csv)
+
+The complete description of each column in the exomoon catalogue is given below. The PLATO and HWO CSV files include the original exoplanet.eu parameters plus additional flags indicating unknown or missing values for each selection criterion.
 
 -----------------------------
 COLUMN DESCRIPTIONS
@@ -98,6 +105,10 @@ Notes
 - Units are included in parentheses.
 - Missing or unknown values are indicated with a blank space.
 - All measurements are referenced to published literature (see "References" column).
+- PLATO and HWO candidate CSV files include all available parameters from the exoplanet.eu database plus selection flags for each filtering step.
+- Candidate counts from filtering:
+  - **PLATO:** 592 candidates
+  - **HWO:** 12 candidates
 
 -----------------------------
 License
@@ -111,7 +122,7 @@ You are free to use, share, and adapt the material, provided that proper credit 
 Author and Contact
 -----------------------------
 
-Alicia Pérez Rodrigo
+Alicia Pérez Rodrigo  
 Master's Thesis in Astrophysics (TFM) – [UCM]  
-Contact: Aliper02
+Contact: Aliper02  
 Year: 2025

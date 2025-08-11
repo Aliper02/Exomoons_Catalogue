@@ -6,16 +6,20 @@ Exomoon & Exoplanet Candidates Catalogues
 
 This repository contains:
 
-1. **Exomoon Candidates Catalogue** – compiled from multiple scientific articles, including key observational and inferred parameters for each candidate moon, host planet, and host star.
-2. **PLATO and HWO Candidate Exoplanets** – derived from the exoplanet.eu database (6038 planets) after applying mission-specific observational selection criteria:
-   - **PLATO**: transit detection optimization (592 candidates).
-   - **HWO**: direct imaging & habitable zone selection (12 candidates).
+1. **Exomoon Candidates Catalogue** – compiled from multiple scientific articles, including key observational and inferred parameters for each candidate moon, host planet, and host star.  
+2. **PLATO and HWO Candidate Exoplanets** – derived from the exoplanet.eu database (6038 planets) after applying mission-specific observational selection criteria:  
+   - **PLATO**: transit detection optimization (592 candidates).  
+   - **HWO**: direct imaging & habitable zone selection (12 candidates).  
+3. **Stable PLATO Candidates** – subset of the PLATO candidate list that additionally satisfy all applied dynamical stability criteria (Hill stability, Roche limit, Laplace radius).
 
-Both filtered exoplanet candidate lists are provided as CSV files:
-- [`plato_candidates.csv`](./plato_candidates.csv)
-- [`hwo_candidates.csv`](./hwo_candidates.csv)
+The provided CSV files are:
+- [`plato_candidates.csv`](./plato_candidates.csv) – PLATO mission observationally filtered candidates.  
+- [`hwo_candidates.csv`](./hwo_candidates.csv) – HWO mission observationally filtered candidates.  
+- [`plato_stable_candidates.csv`](./plato_stable_candidates.csv) – PLATO candidates passing all dynamical stability tests.
 
-The complete description of each column in the exomoon catalogue is given below. The PLATO and HWO CSV files include the original exoplanet.eu parameters plus additional flags indicating unknown or missing values for each selection criterion.
+The complete description of each column in the exomoon catalogue is given below.  
+The PLATO, HWO, and PLATO stable candidates CSV files include the original exoplanet.eu parameters plus additional flags indicating unknown or missing values for each selection criterion.
+
 
 -----------------------------
 COLUMN DESCRIPTIONS

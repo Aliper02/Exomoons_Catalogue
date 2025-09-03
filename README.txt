@@ -11,6 +11,7 @@ This repository contains:
    - **PLATO**: transit detection optimization (592 candidates).  
    - **HWO**: direct imaging & habitable zone selection (12 candidates).  
 3. **Stable PLATO Candidates** – subset of the PLATO candidate list that additionally satisfy all applied dynamical stability criteria (Hill stability, Roche limit, Laplace radius).
+4. **Filtering Pipeline Notebook** – the Jupyter notebook [`Exomoon_Candidate_Filtering.ipynb`](./Exomoon_Candidate_Filtering.ipynb) contains the full Python code used to apply both observational and dynamical filters.
 
 The provided CSV files are:
 - [`plato_candidates.csv`](./plato_candidates.csv) – PLATO mission observationally filtered candidates.  

@@ -7,22 +7,25 @@ Exomoon & Exoplanet Candidates Catalogues
 This repository contains:
 
 1. **Exomoon Candidates Catalogue** – compiled from multiple scientific articles, including key observational and inferred parameters for each candidate moon, host planet, and host star.  
+
 2. **PLATO and HWO Candidate Exoplanets** – derived from the exoplanet.eu database (6038 planets) after applying mission-specific observational selection criteria:  
    - **PLATO**: transit detection optimization (610 candidates).  
    - **HWO**: direct imaging & habitable zone selection (14 candidates).  
+
 3. **Stable PLATO Candidates** – subset of the PLATO candidate list that additionally satisfy all applied dynamical stability criteria (Hill stability, Roche limit, Laplace radius).  
-4. **PLATO Candidates within Field of View** – further subset of the stable PLATO candidates whose sky coordinates place them inside the official LOPS2 field of view (49° × 49°) adopted by ESA.  
+
+4. **PLATO Candidates within the Long Observation Fields** – further subset of the stable PLATO candidates whose sky coordinates place them inside either of the PLATO long-observation fields considered in this work (LOPS2 or LOPN1), both approximated as 49° × 49° regions in equatorial coordinates.  
+
 5. **Filtering Pipeline Notebook** – the Jupyter notebook [`Exomoon_Candidate_Filtering.ipynb`](./Exomoon_Candidate_Filtering.ipynb) contains the full Python code used to apply both observational and dynamical filters.
 
 The provided CSV files are:
 - [`plato_candidates.csv`](./plato_candidates.csv) – PLATO mission observationally filtered candidates.  
 - [`hwo_candidates.csv`](./hwo_candidates.csv) – HWO mission observationally filtered candidates.  
 - [`plato_stable_candidates.csv`](./plato_stable_candidates.csv) – PLATO candidates passing all dynamical stability tests.  
-- [`plato_stable_candidates_visible.csv`](./plato_stable_candidates_visible.csv) – Stable PLATO candidates that also fall within the mission’s official LOPS2 field of view.  
+- [`plato_stable_candidates_visible.csv`](./plato_stable_candidates_visible.csv) – Stable PLATO candidates located within either the LOPS2 or LOPN1 PLATO long-observation fields.  
 
 The complete description of each column in the exomoon catalogue is given below.  
 The PLATO, HWO, PLATO stable, and PLATO visible candidates CSV files include the original exoplanet.eu parameters plus additional flags indicating unknown or missing values for each selection criterion.
-
 
 
 -----------------------------
